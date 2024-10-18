@@ -1,0 +1,15 @@
+C:\Users\F\repos\GithubUserActivityCLI\GithubUserActivityCLI\GithubUserActivityCLI\bin\Debug\net8.0\GithubUserActivityCLI.exe
+C:\Users\F\repos\GithubUserActivityCLI\GithubUserActivityCLI\GithubUserActivityCLI\bin\Debug\net8.0\GithubUserActivityCLI.deps.json
+C:\Users\F\repos\GithubUserActivityCLI\GithubUserActivityCLI\GithubUserActivityCLI\bin\Debug\net8.0\GithubUserActivityCLI.runtimeconfig.json
+C:\Users\F\repos\GithubUserActivityCLI\GithubUserActivityCLI\GithubUserActivityCLI\bin\Debug\net8.0\GithubUserActivityCLI.dll
+C:\Users\F\repos\GithubUserActivityCLI\GithubUserActivityCLI\GithubUserActivityCLI\bin\Debug\net8.0\GithubUserActivityCLI.pdb
+C:\Users\F\repos\GithubUserActivityCLI\GithubUserActivityCLI\GithubUserActivityCLI\obj\Debug\net8.0\GithubUserActivityCLI.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\F\repos\GithubUserActivityCLI\GithubUserActivityCLI\GithubUserActivityCLI\obj\Debug\net8.0\GithubUserActivityCLI.AssemblyInfoInputs.cache
+C:\Users\F\repos\GithubUserActivityCLI\GithubUserActivityCLI\GithubUserActivityCLI\obj\Debug\net8.0\GithubUserActivityCLI.AssemblyInfo.cs
+C:\Users\F\repos\GithubUserActivityCLI\GithubUserActivityCLI\GithubUserActivityCLI\obj\Debug\net8.0\GithubUserActivityCLI.csproj.CoreCompileInputs.cache
+C:\Users\F\repos\GithubUserActivityCLI\GithubUserActivityCLI\GithubUserActivityCLI\obj\Debug\net8.0\GithubUserActivityCLI.sourcelink.json
+C:\Users\F\repos\GithubUserActivityCLI\GithubUserActivityCLI\GithubUserActivityCLI\obj\Debug\net8.0\GithubUserActivityCLI.dll
+C:\Users\F\repos\GithubUserActivityCLI\GithubUserActivityCLI\GithubUserActivityCLI\obj\Debug\net8.0\refint\GithubUserActivityCLI.dll
+C:\Users\F\repos\GithubUserActivityCLI\GithubUserActivityCLI\GithubUserActivityCLI\obj\Debug\net8.0\GithubUserActivityCLI.pdb
+C:\Users\F\repos\GithubUserActivityCLI\GithubUserActivityCLI\GithubUserActivityCLI\obj\Debug\net8.0\GithubUserActivityCLI.genruntimeconfig.cache
+C:\Users\F\repos\GithubUserActivityCLI\GithubUserActivityCLI\GithubUserActivityCLI\obj\Debug\net8.0\ref\GithubUserActivityCLI.dll
