@@ -1,45 +1,49 @@
 ﻿using System.Text.Json;
 using static System.Net.WebRequestMethods;
 
-class Program
+namespace GithubUserActivityCLI
 {
-    static async Task Main(string[] args)
+    class Program
     {
-        if (args.Length != 1)
+        static async Task Main(string[] args)
         {
-            ShowUsage();
-            return;
-        }
-        Console.WriteLine($"Hello {args[0]}");
-
-        await FetchUserActivity(args[0]);
-    }
-
-    static void ShowUsage()
-    {
-        Console.WriteLine("Show Usage");
-    }
-
-    static async Task FetchUserActivity(string username)
-    {
-        string url = $"https://api.github.com/users/{username}/events";
-        try
-        {
-            using (HttpClient client = new HttpClient())
+            if (args.Length != 1)
             {
-                client.DefaultRequestHeaders.Add("User-Agent", @"Mozilla/5.0 (Windows NT 10; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0");
-                using (HttpResponseMessage res = await client.GetAsync(url))
+                ShowUsage();
+                return;
+            }
+            Console.WriteLine($"Hello {args[0]}");
+
+            await FetchUserActivity(args[0]);
+        }
+
+        static void ShowUsage()
+        {
+            Console.WriteLine("Show Usage");
+        }
+
+        static async Task FetchUserActivity(string username)
+        {
+            string url = $"https://api.github.com/users/{username}/events";
+            try
+            {
+                using (HttpClient client = new HttpClient())
                 {
-                    using (HttpContent content = res.Content)
+                    client.DefaultRequestHeaders.Add("User-Agent", @"Mozilla/5.0 (Windows NT 10; Win64; x64; rv:60.0) Gecko/20100101 Firefox/60.0");
+                    using (HttpResponseMessage res = await client.GetAsync(url))
                     {
-                        var data = await content.ReadAsStringAsync();
+                        using (HttpContent content = res.Content)
+                        {
+                            var data = await content.ReadAsStringAsync();
+                            var x = JsonSerializer.Deserialize<List<GithubUserActivity>>(data);
+                        }
                     }
                 }
             }
-        }
-        catch (Exception ex)
-        {
-            throw ex;
+            catch (Exception ex)
+            {
+                throw ex;
+            }
         }
     }
 }
