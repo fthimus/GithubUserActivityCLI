@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "GithubUserActivityCLI": {
+      "commandName": "Project",
+      "commandLineArgs": "fthimus"
+    }
+  }
+}
