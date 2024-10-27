@@ -1,4 +1,5 @@
-﻿using System.Text.Json;
+﻿using System.ComponentModel;
+using System.Text.Json;
 using static System.Net.WebRequestMethods;
 
 namespace GithubUserActivityCLI
@@ -35,7 +36,23 @@ namespace GithubUserActivityCLI
                         using (HttpContent content = res.Content)
                         {
                             var data = await content.ReadAsStringAsync();
-                            var x = JsonSerializer.Deserialize<List<GithubUserActivity>>(data);
+                            List<GithubUserActivity>? githubUserActivities = JsonSerializer.Deserialize<List<GithubUserActivity>>(data);
+                            var groupedActivities = githubUserActivities.GroupBy(x => x.type).ToList();
+                            foreach (var activityGroup in groupedActivities)
+                            {
+                                var repoGroups = activityGroup.GroupBy(x => x.repo.name);
+                                foreach (var repoGroup in repoGroups)
+                                {
+                                    int eventCount = repoGroup.ToList().Count;
+                                    if (activityGroup.Key == "PushEvent")
+                                        Console.WriteLine("Pushed " + eventCount + " commit" + (eventCount > 1 ? "s" : "") + " to " + repoGroup.Key);
+                                    else if (activityGroup.Key == "CreateEvent")
+                                        Console.WriteLine("Created " + repoGroup.Key);
+                                    else
+                                        Console.WriteLine(repoGroup.Key + " - " + repoGroup.ToList().Count);
+                                    
+                                }
+                            }
                         }
                     }
                 }

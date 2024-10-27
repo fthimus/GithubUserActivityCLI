@@ -14,7 +14,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("GithubUserActivityCLI")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+1debd9e274a5c6d6186ffa5947cc46f78e0d74ec")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+76e43bac930e0318a4d25eaa5c5cc6ee134b96b9")]
 [assembly: System.Reflection.AssemblyProductAttribute("GithubUserActivityCLI")]
 [assembly: System.Reflection.AssemblyTitleAttribute("GithubUserActivityCLI")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]
